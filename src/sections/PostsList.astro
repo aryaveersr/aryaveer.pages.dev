@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("posts");
+---
+
+<ul>
+  {
+    posts.map((post) => (
+      <li>
+        <a href={`/posts/${post.id}`}>{post.data.title}</a>
+        <p>{post.data.summary}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  ul {
+    padding-left: 1rem;
+  }
+
+  li {
+    padding-left: 0.25rem;
+  }
+
+  li > p {
+    margin-top: 0.25rem;
+  }
+</style>

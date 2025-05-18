@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
+import PostsList from "@sections/PostsList.astro";
 import ProjectsList from "@sections/ProjectsList.astro";
 ---
 
@@ -8,8 +9,14 @@ import ProjectsList from "@sections/ProjectsList.astro";
     <h1>Hi, I'm Aryaveer.</h1>
     <p>I'm an aspiring software developer from India.</p>
   </section>
+
   <section>
     <h2>Projects</h2>
     <ProjectsList />
+  </section>
+
+  <section>
+    <h2>Posts</h2>
+    <PostsList />
   </section>
 </BaseLayout>
