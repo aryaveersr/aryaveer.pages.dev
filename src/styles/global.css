@@ -24,6 +24,11 @@
   --lime-50: oklch(98.6% 0.031 120.757);
 }
 
+::selection {
+  color: var(--gray-950);
+  background-color: var(--lime-400);
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -54,7 +59,14 @@ h5 {
   margin-block: 1rem;
 }
 
-::selection {
-  color: var(--gray-950);
-  background-color: var(--lime-400);
+a {
+  text-decoration: none;
+  color: var(--lime-500);
+
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--lime-400);
 }

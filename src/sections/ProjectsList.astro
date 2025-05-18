@@ -1,0 +1,33 @@
+---
+import { render } from "astro:content";
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("projects");
+---
+
+<ul>
+  {
+    projects.map(async (project) => {
+      const { Content } = await render(project);
+
+      return (
+        <li>
+          <a href={project.data.href}>{project.data.name}:</a>
+          <p>
+            <Content />
+          </p>
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style>
+  li {
+    padding-left: 0.25rem;
+  }
+
+  li > p {
+    margin-top: 0.25rem;
+  }
+</style>
