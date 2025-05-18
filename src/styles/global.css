@@ -1,0 +1,60 @@
+:root {
+  --gray-950: oklch(13% 0.028 261.692);
+  --gray-900: oklch(21% 0.034 264.665);
+  --gray-800: oklch(27.8% 0.033 256.848);
+  --gray-700: oklch(37.3% 0.034 259.733);
+  --gray-600: oklch(44.6% 0.03 256.802);
+  --gray-500: oklch(55.1% 0.027 264.364);
+  --gray-400: oklch(70.7% 0.022 261.325);
+  --gray-300: oklch(87.2% 0.01 258.338);
+  --gray-200: oklch(92.8% 0.006 264.531);
+  --gray-100: oklch(96.7% 0.003 264.542);
+  --gray-50: oklch(98.5% 0.002 247.839);
+
+  --lime-950: oklch(27.4% 0.072 132.109);
+  --lime-900: oklch(40.5% 0.101 131.063);
+  --lime-800: oklch(45.3% 0.124 130.933);
+  --lime-700: oklch(53.2% 0.157 131.589);
+  --lime-600: oklch(64.8% 0.2 131.684);
+  --lime-500: oklch(76.8% 0.233 130.85);
+  --lime-400: oklch(84.1% 0.238 128.85);
+  --lime-300: oklch(89.7% 0.196 126.665);
+  --lime-200: oklch(93.8% 0.127 124.321);
+  --lime-100: oklch(96.7% 0.067 122.328);
+  --lime-50: oklch(98.6% 0.031 120.757);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: var(--gray-300);
+  background-color: var(--gray-950);
+
+  font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--gray-50);
+
+  margin-block: 1rem;
+}
+
+::selection {
+  color: var(--gray-950);
+  background-color: var(--lime-400);
+}
