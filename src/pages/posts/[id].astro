@@ -31,22 +31,24 @@ const { Content } = await render(post);
 </BaseLayout>
 
 <style>
-  section {
-    text-align: center;
-  }
-
   h1 {
     font-size: 2.25rem;
   }
 
   p {
-    margin-inline: auto;
+    max-width: 80ch;
   }
 
   hr {
+    width: 75%;
+
     border: none;
     border-top: 1px dashed var(--gray-300);
 
     color: var(--gray-50);
+  }
+
+  article {
+    text-indent: 1rem;
   }
 </style>
